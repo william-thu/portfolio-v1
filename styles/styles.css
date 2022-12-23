@@ -1,0 +1,179 @@
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+section {
+    padding: 100px;
+}
+
+.banner {
+    position: relative;
+    min-height: 100vh;
+    background: url(/img/banner.jpg);
+    background-size: cover;
+    background-position: right;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.banner h2 {
+    font-size: 3em;
+    color: #fff;
+    font-weight: 300;
+    line-height: 1.5em;
+}
+
+.banner h2 span {
+    font-size: 1.5em;
+    font-weight: 700;
+}
+
+.banner h3 {
+    font-size: 1.5em;
+    color: #fff;
+    font-weight: 500;
+}
+
+.btn {
+    position: relative;
+    background: #fff;
+    display: inline-block;
+    color: #000;
+    margin-top: 20px;
+    padding: 10px 30px;
+    font-size: 18px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-weight: 500;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s;
+}
+
+header.sticky {
+    background-color: #fff;
+    padding-right: 20px 100px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+header .logo {
+    color: #fff;
+    font-size: 24px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+header.sticky .logo {
+    color: #111;
+}
+
+header ul {
+    position: relative;
+    display: flex;
+}
+
+header ul li {
+    position: relative;
+    list-style: none;
+}
+
+header ul li a {
+    position: relative;
+    display: inline-block;
+    margin: 0 15px;
+    color: #fff;
+    text-decoration: none;
+}
+
+header.sticky ul li a {
+    color: #111;
+}
+
+.heading {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #111
+}
+
+.heading h2 {
+    font-weight: 600;
+    font-size: 30px;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.content-head {
+    padding-right: 30px;
+}
+.content-head h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.contents {
+    min-width: 50%;
+}
+
+img {
+    max-width: 100%;
+}
+
+.projects {
+    background: #111;
+}
+
+.heading.white {
+    color: #fff;
+}
+
+.projects .content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.projects .content .content-project {
+    padding: 40px 20px;
+    background: #222;
+    color: #fff;
+    max-width: 340px;
+    margin: 20px;
+    text-align: center;
+    transition: 0.5s;
+}
+
+.projects .content .content-project:hover {
+    background: #464646;
+}
+
+.projects .content .content-project img {
+    min-height: 190px;
+    max-height: 190px;
+}
+
+.projects .content .content-project h2 {
+    font-size: 20px;
+    font-weight: 600;
+}

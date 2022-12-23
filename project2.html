@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 2</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="styles/swiperstyles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="container-swiper">
+        <!-- Slider main container -->
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                    <img src="img/strengthchecker.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/banner.jpg" alt="">
+                </div>
+
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+    </div>
+    <section class="project-section">
+        <div class="project-heading">
+            <h2>Password Strength Checker</h2>
+        </div>
+        <div class="description-container">
+            <div class="description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores eos, ex distinctio itaque inventore
+                nisi nihil repudiandae velit, voluptate dolorem a sequi perferendis voluptates amet aliquam voluptatum
+                doloremque facere provident?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores eos, ex distinctio itaque inventore
+                nisi nihil repudiandae velit, voluptate dolorem a sequi perferendis voluptates amet aliquam voluptatum
+                doloremque facere provident?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores eos, ex distinctio itaque inventore
+                nisi nihil repudiandae velit, voluptate dolorem a sequi perferendis voluptates amet aliquam voluptatum
+                doloremque facere provident?
+            </div>
+        </div>
+    </section>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            // Optional parameters
+
+            // If we need pagination
+            pagination: {
+                el: '.swiper-pagination',
+            },
+
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+
+            // And if we need scrollbar
+            scrollbar: {
+                el: '.swiper-scrollbar',
+            },
+        });
+    </script>
+</body>
+
+</html>
